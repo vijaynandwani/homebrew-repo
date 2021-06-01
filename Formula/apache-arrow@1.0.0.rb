@@ -17,7 +17,7 @@ class ApacheArrowAT100 < Formula
   depends_on "numpy"
   depends_on "openssl@1.1"
   depends_on "protobuf"
-  depends_on "python@3.8"
+  depends_on "python@3.9"
   depends_on "rapidjson"
   depends_on "snappy"
   depends_on "thrift"
@@ -40,7 +40,7 @@ class ApacheArrowAT100 < Formula
       -DARROW_WITH_SNAPPY=ON
       -DARROW_WITH_BROTLI=ON
       -DARROW_INSTALL_NAME_RPATH=OFF
-      -DPYTHON_EXECUTABLE=#{Formula["python@3.8"].bin/"python3"}
+      -DPYTHON_EXECUTABLE=#{Formula["python@3.9"].bin/"python3"}
     ]
 
     mkdir "build"
